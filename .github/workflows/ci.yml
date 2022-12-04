@@ -16,7 +16,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_KEY }}
           host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
+          username: ubuntu
           script: |
             git pull origin main
             pm2 restart 0
