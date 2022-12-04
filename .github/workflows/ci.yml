@@ -18,5 +18,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script: |
-            git fetch --all
-            git pull origin main
+            git pull
