@@ -22,4 +22,4 @@ jobs:
           script: |
             git fetch --all
             git pull origin main
-            sudo pm2 restart 0
+            sudo pm2 kill
