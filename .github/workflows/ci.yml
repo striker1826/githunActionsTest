@@ -20,8 +20,7 @@ jobs:
           username: ubuntu
           port: 22
           script: |
-            git init
-            git remote add origin https://github.com/striker1826/githunActionsTest.git
+            cd githunActionsTest
             git fetch --all
             git pull origin main
             sudo pm2 restart 0
