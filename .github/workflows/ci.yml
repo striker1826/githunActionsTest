@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run scripts in server
-        uses: appleboy/ssh-action@master
+        uses: JimCronqvist/action-ssh@master
         with:
           key: ${{ secrets.SSH_KEY }}
           host: ${{ secrets.HOST }}
