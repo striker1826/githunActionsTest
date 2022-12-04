@@ -21,6 +21,7 @@ jobs:
           port: 22
           script: |
             cd githunActionsTest
+            sudo chmod a+rwx .git/FETCH_HEAD
             git fetch --all
             git pull origin main
             sudo pm2 restart 0
