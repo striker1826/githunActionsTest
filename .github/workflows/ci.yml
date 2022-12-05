@@ -32,4 +32,5 @@ jobs:
             sudo chmod -R ugo+rwX .
             git fetch --all
             git pull origin main
+            npm i
             sudo pm2 restart 0
